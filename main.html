@@ -12,15 +12,15 @@
 			//Write your code here
 			let ans=-Infinity;
 			let bool=arr.every(i=> i===arr[0]);
-			if(arr.length>1 && bool==='false'){				
-				arr=arr.sort((a,b)=>(b-a));
-				ans=arr[arr.length-1];
+			if(arr.length>1 && bool===false){				
+				arr=arr.sort((a,b)=>(a-b));
+				ans=arr[arr.length-2];
 			}
 			return ans;
 		}
 
 		function Main() {
-			// var n = prompt("Enter the number of elements");
+			var n = prompt("Enter the number of elements");
 		
 			var arr = [];
 			for (var i = 0; i < n; i++) {
