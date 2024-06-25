@@ -13,8 +13,8 @@
 			let ans=-Infinity;
 			let bool=arr.every(i=> i===arr[0]);
 			if(arr.length>1 && bool==='false'){				
-				ans=arr.sort((a,b)=>(a-b));
-				ans=arr[arr.length-2];
+				ans=arr.sort((a,b)=>(b-a));
+				ans=arr[1];
 			}
 			return ans;
 		}
