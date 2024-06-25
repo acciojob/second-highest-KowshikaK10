@@ -11,8 +11,8 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let ans=-Infinity;
-			if(arr.length<=1)return ans;
-			else{				
+			let bool=arr.every(i=> i===arr[0]);
+			if(arr.length>1 && bool===false){				
 				ans=arr.sort((a,b)=>(a-b));
 				ans=arr[arr.length-2];
 			}
@@ -21,11 +21,12 @@
 
 		function Main() {
 			// var n = prompt("Enter the number of elements");
+		
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
-			// alert(secondHighest(arr));
+			alert(secondHighest(arr));
 	
 		}
 		Main();
